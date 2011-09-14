@@ -87,8 +87,10 @@ public final class R {
         public static final int body_weight_setting_title=0x7f080034;
         public static final int calories_burned=0x7f08000a;
         public static final int centimeters=0x7f08000b;
+        public static final int csv_header=0x7f08005a;
         public static final int desired_pace=0x7f08000f;
         public static final int desired_speed=0x7f080010;
+        public static final int error_writting_file=0x7f08005b;
         public static final int exercise_type_running=0x7f080038;
         public static final int exercise_type_setting=0x7f080035;
         public static final int exercise_type_setting_details=0x7f080036;
@@ -110,6 +112,7 @@ public final class R {
         public static final int kilograms=0x7f08000d;
         public static final int kilometers=0x7f080005;
         public static final int kilometers_per_hour=0x7f080008;
+        public static final int logging_title=0x7f08005c;
         public static final int low=0x7f080021;
         public static final int lower=0x7f080020;
         public static final int maintain_nothing=0x7f08003d;
@@ -131,6 +134,8 @@ public final class R {
         public static final int reset=0x7f080013;
         public static final int resume=0x7f080012;
         public static final int run_in_background=0x7f080027;
+        public static final int save_to_sd=0x7f08005e;
+        public static final int save_to_sd_details=0x7f08005d;
         public static final int sensitivity_setting=0x7f080018;
         public static final int sensitivity_setting_details=0x7f080019;
         public static final int sensitivity_setting_title=0x7f08001a;

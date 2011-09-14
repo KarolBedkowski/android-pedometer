@@ -125,6 +125,13 @@
         </PreferenceScreen>
     </PreferenceCategory>
 
-
+    <PreferenceCategory
+            android:title="@string/logging_title">
+        <CheckBoxPreference
+                android:key="save_to_sd"
+                android:title="@string/save_to_sd"
+                android:summary = "@string/save_to_sd_details"
+                android:defaultValue="false" />
+    </PreferenceCategory>
     
 </PreferenceScreen>

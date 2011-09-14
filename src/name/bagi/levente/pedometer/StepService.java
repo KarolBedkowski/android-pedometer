@@ -18,6 +18,8 @@
 
 package name.bagi.levente.pedometer;
 
+import java.util.Date;
+
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -76,6 +78,7 @@ public class StepService extends Service {
     private float mDistance;
     private float mSpeed;
     private float mCalories;
+    private Date mStart = new Date();
     
     /**
      * Class for clients to access.  Because we know this service always
@@ -279,6 +282,11 @@ public class StepService extends Service {
     }
     
     public void resetValues() {
+		if (mSettings.getBoolean("save_to_sd", false)) {
+			Logging.writeDataToLog(getApplicationContext(), mStart, mSteps,
+					mPace, mDistance, mSpeed, mCalories);
+		}
+		mStart = new Date();
         mStepDisplayer.setSteps(0);
         mPaceNotifier.setPace(0);
         mDistanceNotifier.setDistance(0);

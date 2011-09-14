@@ -99,4 +99,9 @@
 
     <string name="quit">Quit</string>
 
+    <string name="csv_header">date,steps,pace,distance,speed,calories</string>
+    <string name="error_writting_file">Write file error!</string>
+    <string name="logging_title">Logging</string>
+    <string name="save_to_sd_details">Save data do /sdcard/Pedometer.csv file.</string>
+    <string name="save_to_sd">Save data to file</string>
 </resources>
